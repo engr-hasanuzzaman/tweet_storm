@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
   end
   spec.bindir = 'exe'
   spec.executables << 'tweetstormgenerator'
+  spec.executables << 'create_alias'
   spec.require_paths = ['lib']
 
   # dev dependency
