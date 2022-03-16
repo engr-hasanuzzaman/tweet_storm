@@ -4,6 +4,11 @@ This is a tweet-storm generator which will break large text into tweetable small
 - Each tweet can't be over 140 characters.
 - Each tweet will be suffixed with an indicator of the tweet number and the total number of tweets.
 
+## Run application without any installation
+- fork this repo
+- go to the rool folder
+- run `chmod 751 lib/tweet_storm.rb` to give execution permission
+- run `./lib/tweet_storm.rb foo "you long text"`
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -58,6 +63,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 - [ ] update large text breaking logic rather than breaking with white space
 - [ ] publish to `rubygems.org` (having trouble to publish gem to `rubygems.org`)
 - [ ] use well established library for terminal text coloring instead of rely on hard coded unix color
+- [ ] have to write test for test_data_generator class
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at [link](https://github.com/engr-hasanuzzaman/tweet_storm). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/engr-hasanuzzaman/tweet_storm/blob/master/CODE_OF_CONDUCT.md).

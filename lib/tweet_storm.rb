@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # frozen_string_literal: true
 
 require_relative "tweet_storm/version"
@@ -32,4 +34,9 @@ module TweetStorm
       end
     end
   end
+end
+
+# if this is the main caller file
+if __FILE__ == $0
+  TweetStorm::App.run(ARGV)
 end
