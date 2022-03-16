@@ -19,6 +19,18 @@ And then execute:
 
 `bundle exec tweetstormgenerator "you large tweet text that want to break"`
 
+## Use with other application
+You can call the libray from your code as the following
+
+```ruby
+require 'tweet_storm'
+
+TweetStorm::App.run(['test input'])
+# if you only want to use generator without any pre-processing
+TweetStorm::Generator.call(['test input'])
+```
+
+**N.B: if you bundler run your code as `bundle exec foo.rb` to ensure installed gem are proprly loaded**
 ### How to access `tweetstormgenerator` without `bundle exec`?
 - create alison on `.bashrc` or `.zshrc` like `alias tweetstormgenerator='bash bundle exec tweetstormgenerator' `  (Not very user friendly way to do :( )
 
