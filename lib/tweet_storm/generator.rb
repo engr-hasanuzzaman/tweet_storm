@@ -23,9 +23,10 @@ module TweetStorm
     # class methods
     #----------------
     def self.call(tweet_text)
+      tweet_text.strip!
       @@tweet_text =  tweet_text
 
-      return [tweet_text] if tweet_text.size <= MAX_CHAR_COUNT
+      return [@@tweet_text] if @@tweet_text.size <= MAX_CHAR_COUNT
 
       tweets_with_sufix generate_tweets(tweet_text)
     end

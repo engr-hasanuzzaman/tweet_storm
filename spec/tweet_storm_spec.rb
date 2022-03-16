@@ -12,7 +12,8 @@ RSpec.describe TweetStorm::Generator do
 
       it 'return single tweet including white space' do
         tweet_text = '          Very           short       tweet        '
-        expect(described_class.call(tweet_text)).to match_array [tweet_text]
+        puts described_class.call(tweet_text)
+        expect(described_class.call(tweet_text)).to match_array ['Very           short       tweet']
       end
     end
 
@@ -55,6 +56,18 @@ RSpec.describe TweetStorm::Generator do
         large_words = (1..100).map { TestDataGenerator.random_word(133) }
         tweet = large_words.join(' ')
         expect { described_class.call(tweet) }.to raise_error(TweetStorm::WordSizeExceedLimit::MSG)
+      end
+
+      it 'generate tweet by skipping white space' do
+        large_words = (1..4).map { TestDataGenerator.random_word(136) }
+        tweet = large_words.join('          ')
+        expect(described_class.call(tweet).last).to end_with '4/4'
+      end
+
+      it 'return empty tweets with only white space' do
+        tweet = ''
+        200.times{ tweet += ' ' }
+        expect(described_class.call(tweet)).to match_array ['']
       end
     end
   end
