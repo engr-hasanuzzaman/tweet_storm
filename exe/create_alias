@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+path = File.expand_path File.dirname(__FILE__)
+puts "curent paths is #{path}"
+system "sudo ln -s #{path}/tweetstormgenerator /usr/local/bin/tweetstormgenerator"

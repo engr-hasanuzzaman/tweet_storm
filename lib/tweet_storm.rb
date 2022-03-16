@@ -21,11 +21,11 @@ module TweetStorm
       else
         tweets = Generator.call(tweet_text)
 
-        puts '-----------Generated Tweets are ---------------------------'.cyan
+        puts '-----------Generated Tweets ---------------------------'.cyan
 
         tweets.each do |tweet|
-          puts tweet
           puts
+          puts tweet
         end
       end
     end
