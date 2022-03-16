@@ -20,6 +20,9 @@ And then execute:
 `bundle exec tweetstormgenerator "you large tweet text that want to break"`
 
 ### How to access `tweetstormgenerator` without `bundle exec`?
+- create alison on `.bashrc` or `.zshrc` like `alias tweetstormgenerator='bash bundle exec tweetstormgenerator' `  (Not very user friendly way to do :( )
+
+**N.B: the follow way has issue. does now work always**
 - Rub the following command `bundle exec create_alias` which will create a alias under `/usr/local/bin/`
 - run `tweetstormgenerator` using either `/usr/local/bin/tweetstormgenerator` or only `tweetstormgenerator`
 ## Development
