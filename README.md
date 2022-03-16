@@ -8,16 +8,25 @@ This is a tweet-storm generator which will break large text into tweetable small
 
 Add this line to your application's Gemfile:
 
+**N.B: If you do not have any Gemfile, you can create one by following**
+- opent terminal & run the following commands
+```bash
+mkdir my_project
+cd my_project
+touch Gemfile
+```
+add the follow line on your Gemfile
+
 ```ruby
 gem 'tweet_storm', :git => 'https://github.com/engr-hasanuzzaman/tweet_storm.git'
 ```
 
-And then execute:
+Go to the project root filder and then execute:
 
     $ bundle install
 ## Usage
 
-`bundle exec tweetstormgenerator "you large tweet text that want to break"`
+- `bundle exec tweetstormgenerator "you large tweet text that want to break"`
 
 ## Use with other application
 You can call the libray from your code as the following
