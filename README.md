@@ -5,11 +5,21 @@ This is a tweet-storm generator which will break large text into tweetable small
 - Each tweet will be suffixed with an indicator of the tweet number and the total number of tweets.
 
 ## Run application without any installation
-- fork this repo
-- go to the rool folder
+- fork this repo `git clone https://github.com/engr-hasanuzzaman/tweet_storm.git`
+- open terminal and go to the rool folder `cd tweet_storm`
+
+### way 1
+- run on our teminal`./exe/tweetstormgenerator "you long text"`
+
+### way 2
 - run `chmod 751 lib/tweet_storm.rb` to give execution permission
 - run `./lib/tweet_storm.rb foo "you long text"`
-## Installation
+
+### way 3
+- create an alias using `sudo ln -s **full_path**/lib/tweet_storm.rb /usr/local/bin/tweetstormgenerator` (have to provide full path of the tweet_storm.rb file)
+- run `tweetstormgenerator` using either `/usr/local/bin/tweetstormgenerator` or only `tweetstormgenerator`
+
+## Use by installing as well as requiring with other application
 
 Add this line to your application's Gemfile:
 
