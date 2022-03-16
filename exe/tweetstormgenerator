@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
 
 require 'tweet_storm'
+TweetStorm::App.run(ARGV)

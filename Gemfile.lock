@@ -48,7 +48,7 @@ PLATFORMS
 DEPENDENCIES
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (~> 1.21)
+  rubocop
   tweet_storm!
 
 BUNDLED WITH

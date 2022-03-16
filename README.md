@@ -1,28 +1,23 @@
 # TweetStorm
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tweet_storm`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+TweetStorm is a TweetStorm generator which will break largt text into tweetable text following the below rules
+- Each tweet can't be over 140 characters.
+- Each tweet will be suffixed with an indicator of the tweet number and the total number of tweets.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tweet_storm'
+gem 'tweet_storm', :git => 'https://github.com/engr-hasanuzzaman/tweet_storm.git'
 ```
 
 And then execute:
 
     $ bundle install
-
-Or install it yourself as:
-
-    $ gem install tweet_storm
-
 ## Usage
 
-TODO: Write usage instructions here
+`bundle exec tweetstormgenerator "you large tweet text that want to break"`
 
 ## Development
 
@@ -32,7 +27,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tweet_storm. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/tweet_storm/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at [link](https://github.com/engr-hasanuzzaman/tweet_storm). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/engr-hasanuzzaman/tweet_storm/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
