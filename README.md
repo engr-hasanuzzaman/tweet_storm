@@ -22,7 +22,7 @@ And then execute:
 ### How to access `tweetstormgenerator` without `bundle exec`?
 - create alison on `.bashrc` or `.zshrc` like `alias tweetstormgenerator='bash bundle exec tweetstormgenerator' `  (Not very user friendly way to do :( )
 
-**N.B: the follow way has issue. does now work always**
+**N.B: The following way has a issue. It does not work always**
 - Rub the following command `bundle exec create_alias` which will create a alias under `/usr/local/bin/`
 - run `tweetstormgenerator` using either `/usr/local/bin/tweetstormgenerator` or only `tweetstormgenerator`
 ## Development
@@ -33,10 +33,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Todos
 - [ ] improve the test coverage
-- [ ] use thore or similar gem which will provide rich command line experience
+- [ ] use `thor` or similar gem which will provide rich command line experience
 - [ ] update large text breaking logic rather than breaking with white space
 - [ ] publish to `rubygems.org` (having trouble to publish gem to `rubygems.org`)
-- [ ] use well stablished library for terminal text coloring instead of rely on hard coded unix color
+- [ ] use well established library for terminal text coloring instead of rely on hard coded unix color
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at [link](https://github.com/engr-hasanuzzaman/tweet_storm). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/engr-hasanuzzaman/tweet_storm/blob/master/CODE_OF_CONDUCT.md).
