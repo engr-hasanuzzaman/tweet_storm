@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Gem for generating tweetstorm"
   spec.homepage = "https://github.com/engr-hasanuzzaman/tweet_storm"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.1.1"
+  spec.required_ruby_version = ">= 2.5"
 
   spec.metadata["allowed_push_host"] = spec.homepage
 
@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
     end
   end
   spec.bindir = "exe"
-  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
