@@ -18,4 +18,13 @@ module TweetStorm
       super(self.class::MSG)
     end
   end
+  
+  # Exception for large input text
+  class InvalidArray < StandardError
+    MSG = 'Expecting array as the input'
+
+    def initialize
+      super(self.class::MSG)
+    end
+  end
 end

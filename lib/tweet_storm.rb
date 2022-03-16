@@ -2,11 +2,13 @@
 
 require_relative "tweet_storm/version"
 require_relative 'tweet_storm/generator'
+require_relative 'tweet_storm/exceptions'
 require_relative 'color'
 
 module TweetStorm
   class App
     def self.run(args)
+      raise InvalidArray.new unless args.is_a?(Array)
       # -------------------------------
       # input pre-processing
       # handle input without quotation

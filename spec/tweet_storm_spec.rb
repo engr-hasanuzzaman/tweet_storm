@@ -66,7 +66,7 @@ RSpec.describe TweetStorm::Generator do
 
       it 'return empty tweets with only white space' do
         tweet = ''
-        200.times{ tweet += ' ' }
+        200.times { tweet += ' ' }
         expect(described_class.call(tweet)).to match_array ['']
       end
     end

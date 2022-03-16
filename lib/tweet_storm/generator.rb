@@ -16,6 +16,8 @@ module TweetStorm
     #----------------
     # class variables
     #----------------
+
+    # rubocop:disable Style/ClassVars
     @@suffix_size = nil
     @@max_content_size = nil
 
@@ -68,9 +70,11 @@ module TweetStorm
       max_content_size >= tweet.size
     end
 
+    # TODO: have to refactor to reduce the complexity
+    # rubocop:disable Metrics/AbcSize
     def self.suffix_size
       # return if already calculated
-      @@suffix_size if @@suffix_size
+      @@suffix_size unless @@suffix_size.nil?
 
       tweets_count = (@@tweet_text.size / MAX_CHAR_COUNT.to_f).ceil
       #----------------
