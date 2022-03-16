@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Gem for generating tweetstorm"
   spec.description = "Gem for generating tweetstorm"
-  spec.homepage = "https://github.com/engr-hasanuzzaman/tweet_storm"
+  spec.homepage = "https://github.com/engr-hasanuzzaman/tweet_storm.git"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.5"
 
