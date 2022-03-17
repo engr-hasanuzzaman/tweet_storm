@@ -1,6 +1,6 @@
 # TweetStorm
 
-This is a tweet-storm generator which will break large text into tweetable smaller text following the below rules
+This is a tweet-storm generator `gem` which will break large text into tweetable smaller text following the below rules
 - Each tweet can't be over 140 characters.
 - Each tweet will be suffixed with an indicator of the tweet number and the total number of tweets.
 
